@@ -1,5 +1,6 @@
 import MainHeader from "@/components/layout/main-header"
 import { Inter } from "next/font/google"
+import classes from "./layout.module.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -14,8 +15,8 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang="en">
-			<body className={inter.className}>
+		<html lang="en" className={inter.className}>
+			<body className={classes.body}>
 				<MainHeader />
 				{children}
 			</body>
