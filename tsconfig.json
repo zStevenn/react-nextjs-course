@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/events/event-list.tsx", "components/events/event-item.tsx", "components/layout/layout.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/events/event-list.tsx", "components/events/event-item.tsx", "components/layout/layout.jsx", "components/ui/button.tsx"],
   "exclude": ["node_modules"]
 }
