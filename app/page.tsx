@@ -1,3 +1,5 @@
+"use client"
+
 import { getFeaturedEvents } from "@/dummy_data.js"
 import EventList from "@/components/events/event-list"
 import MainHeader from "@/components/layout/main-header"
