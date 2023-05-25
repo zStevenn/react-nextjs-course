@@ -22,11 +22,7 @@ function FilteredEventsPage() {
 	const numMonth = +month
 
 	if (!pathname) {
-		return (
-			<ErrorAlert>
-				<p className="center">Loading...</p>
-			</ErrorAlert>
-		)
+		return <ErrorAlert>Loading...</ErrorAlert>
 	}
 
 	// Check if the year and month are valid
@@ -40,9 +36,7 @@ function FilteredEventsPage() {
 	) {
 		return (
 			<>
-				<ErrorAlert>
-					<p className="center">Invalid filter. Please adjust your values!</p>
-				</ErrorAlert>
+				<ErrorAlert>Invalid filter. Please adjust your values!</ErrorAlert>
 				<Button link="/events">Show All Events</Button>
 			</>
 		)
@@ -53,9 +47,7 @@ function FilteredEventsPage() {
 	if (!filteredEvents || filteredEvents.length === 0) {
 		return (
 			<>
-				<ErrorAlert>
-					<p className="center">No events found for the chosen filter!</p>
-				</ErrorAlert>
+				<ErrorAlert>No events found for the chosen filter!</ErrorAlert>
 				<Button link="/events">Show All Events</Button>
 			</>
 		)
