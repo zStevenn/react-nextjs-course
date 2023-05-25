@@ -5,7 +5,9 @@ import { getEventById } from "../../../dummy_data"
 import EventSummary from "../../../components/event-detail/event-summary"
 import EventLogistics from "../../../components/event-detail/event-logistics"
 import EventContent from "../../../components/event-detail/event-content"
+import ErrorAlert from "@/components/ui/error-alert"
 import { useEffect, useState } from "react"
+import Button from "@/components/ui/button"
 
 function EventDetailPage() {
 	// Set an event state
@@ -24,7 +26,10 @@ function EventDetailPage() {
 	if (!event) {
 		return (
 			<>
+			<ErrorAlert>
 				<p>No event found!</p>
+			</ErrorAlert>
+			<Button link="/events">Show All Events</Button>
 			</>
 		)
 	}
